@@ -1,0 +1,50 @@
+%% Copyright (C) 2016 Achim D. Brucker, https://www.brucker.ch
+%%
+%% License:
+%%   This program can be redistributed and/or modified under the terms
+%%   of the LaTeX Project Public License Distributed from CTAN
+%%   archives in directory macros/latex/base/lppl.txt; either
+%%   version 1 of the License, or any later version.
+%%   OR
+%%   The 2-clause BSD-style license.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{tuos-logo}
+   [2016/07/27 The University of Sheffield Logo.]
+\RequirePackage{graphicx}
+\RequirePackage{ifthen}
+
+\newboolean{high}
+\setboolean{high}{false}
+
+\newboolean{bw}
+\setboolean{bw}{false}
+
+\DeclareOption{high}{
+  \setboolean{high}{true}
+}
+\DeclareOption{bw}{
+  \setboolean{bw}{true}
+}
+
+% Default setup: colour logo with low/medium resolution.
+\ProcessOptions\relax
+
+\ifthenelse{\boolean{high}}{%
+  \ifthenelse{\boolean{bw}}{
+    \newcommand{\tuosLogoDark}[1][]{\includegraphics[#1]{logo/tuoslogo_bw_vhi}}
+    \newcommand{\tuosLogoLight}[1][]{\includegraphics[#1]{logo/tuoslogo_key_bw_vhi}}
+  }{
+    \newcommand{\tuosLogoLight}[1][]{\includegraphics[#1]{logo/tuoslogo_key_cmyk_hi}}
+    \newcommand{\tuosLogoDark}[1][]{\includegraphics[#1]{logo/tuoslogo_cmyk_hi}}
+  }
+}{
+  \ifthenelse{\boolean{bw}}{
+    \newcommand{\tuosLogoDark}[1][]{\includegraphics[#1]{logo/tuoslogo_bw_med}}
+    \newcommand{\tuosLogoLight}[1][]{\includegraphics[#1]{logo/tuoslogo_key_bw_med}}
+  }{
+    \newcommand{\tuosLogoDark}[1][]{\includegraphics[#1]{logo/tuoslogo_cmyk_med}}
+    \newcommand{\tuosLogoLight}[1][]{\includegraphics[#1]{logo/tuoslogo_key_cmyk_med}}
+  }
+}
+
+\endinput
