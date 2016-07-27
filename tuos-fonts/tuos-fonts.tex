@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage{a4wide}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tuos-fonts}
+
+\newcommand{\example}[2]{%
+  #1:\\{#2
+  \noindent abcdefghijklmnoprqstuvwxyz\\
+  \noindent ABCDEFGHIJKLMNOPQRSTUVWXYZ\\
+  \noindent 0123456789.:,;(*!?'/\textbackslash")\$\%\^\&-+@~\#<>{}[]\\
+  \noindent The quick brown fox jumps over the lazy dog.\\
+  \noindent fi ff ffi ä ö ü Ä Ö Ü ß 
+}}
+
+\newcommand{\fgexample}[2]{%
+  #1:\\#2{
+    \noindent 0123456789}}
+
+\begin{document}
+\begin{minipage}{0.96\linewidth}
+  \begin{minipage}[t]{0.49\linewidth}
+    \textbf{\Large Serif (Stephenson)}
+    \footnotesize
+    \begin{itemize}
+    \item \example{Normal:}{}
+    \item \example{Bold:}{\bfseries}
+    \item \example{Italic:}{\itshape}
+    \item \example{Small caps:}{\scshape}
+    \item \fgexample{Text figures}{\txfigures}
+    \item \fgexample{Lining figures}{\lnfigures}
+    \end{itemize}
+  \end{minipage}
+  \begin{minipage}[t]{0.49\linewidth}
+    \sffamily
+    \textbf{\Large Sans Serif (Blake)}
+    \footnotesize
+    \begin{itemize}
+    \item \example{Normal:}{}
+    \item \example{Bold:}{\bfseries}
+    \item \example{Italic:}{\itshape}
+    \item \example{Normal:}{\scshape}
+    \item \fgexample{Text figures}{\txfigures}
+    \item \fgexample{Lining figures}{\lnfigures}
+    \end{itemize}
+  \end{minipage}
+\end{minipage}
+
+
+\end{document}
+
+
+\DeclareOptionX{lining}{\edef\TUOSBlake@figurestyle{LF}}
+\DeclareOptionX{oldstyle}{\edef\TUOSBlake@figurestyle{OsF}}
+\DeclareOptionX{tabular}{\edef\TUOSBlake@figurealign{T}}
+\DeclareOptionX{bold}{\edef\bfseries@sf{b}}
+\DeclareOptionX{regular}{\edef\mdseries@sf{m}}
+\ExecuteOptionsX{oldstyle,tabular,bold,regular}
+
+
+fontaxes
+\tldefault
+
+mweights
