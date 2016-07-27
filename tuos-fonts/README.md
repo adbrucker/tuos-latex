@@ -64,5 +64,6 @@ not provide all the symbols requires for type-setting mathematical
 content.
 
 ## License
-This project is licensed under a 2-clause BSD-style license.
+This project is dual-licensed under a 2-clause BSD-style license and/or 
+the LPPL version 1 or any later version. 
 
