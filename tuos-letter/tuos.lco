@@ -1,0 +1,64 @@
+%% Copyright (C) 2016 Achim D. Brucker, https://www.brucker.ch
+%%
+%% License:
+%%   This program can be redistributed and/or modified under the terms
+%%   of the LaTeX Project Public License Distributed from CTAN
+%%   archives in directory macros/latex/base/lppl.txt; either
+%%   version 1 of the License, or any later version.
+%%   OR
+%%   The 2-clause BSD-style license.
+%%
+\ProvidesFile{tuos.lco}[%
+  2016/07/28 Letter layout for tuos-letter.]
+
+% type-setting the subject line 
+\setkomafont{subject}{\normalcolor\bfseries}
+
+% type-setting URLs
+\hypersetup{pdfborder=0 0 0}
+\renewcommand{\UrlFont}{\bfseries}
+\renewcommand{\familydefault}{\sfdefault}%
+\raggedright
+\renewcommand*{\raggedsignature}{\raggedright}
+
+% new variables 
+\newkomavar{department}
+\newkomavar{departmentheadtitle}
+\newkomavar{departmentheadname}
+\newkomavar{departmenturl}
+\newkomavar[Blog:]{fromblog}
+
+
+\providecaptionname{american,australian,british,canadian,%
+  english,newzealand,UKenglish,USenglish}\phonename{Telephone}%
+
+% Define first head 
+\@setplength{firstheadhpos}{0mm}
+\@setplength{firstheadwidth}{\paperwidth}
+\@addtoplength[-1]{firstheadvpos}{14pt}
+
+\setkomavar{firsthead}{%
+  \parbox[b]{.55\paperwidth}{\tuosLogoLight}%
+  \parbox[b]{.45\paperwidth}{%
+    \Huge\textcolor{black!40}{\rmfamily\usekomavar{department}.\vspace{.3cm}}}
+}
+
+% Define loc stuff (e.g., back address) 
+\@setplength{lochpos}{0mm}
+\@setplength{locwidth}{.35\paperwidth}
+\@addtoplength{locheight}{165pt}
+
+\setkomavar{location}{\raggedright\rmfamily%
+  \ifkomavarempty{departmentheadtitle}{%
+    \ifkomavarempty{departmentheadname}{\bigskip}{}}{\usekomavar{departmentheadtitle}\\}%
+  \ifkomavarempty{departmentheadname}{}{\usekomavar{departmentheadname}\\\bigskip}%
+  %
+  \usekomavar{fromaddress}\\\bigskip
+  \ifkomavarempty{fromphone}{}{\usekomavar*{fromphone}~\usekomavar{fromphone}\\}%
+  \ifkomavarempty{fromfax}{}{\usekomavar*{fromfax}~\usekomavar{fromfax}\\}%
+  \ifkomavarempty{fromemail}{}{\usekomavar*{fromemail}~\usekomavar{fromemail}\\}%
+  \ifkomavarempty{fromblog}{}{\usekomavar*{fromblog}~\usekomavar{fromblog}\\}%
+  \ifkomavarempty{departmenturl}{}{\usekomavar{departmenturl}\\}%
+  \ifkomavarempty{fromurl}{}{\usekomavar{fromurl}\\}%
+}
+
