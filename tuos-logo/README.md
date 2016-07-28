@@ -1,4 +1,4 @@
-# tuos-fonts
+# tuos-logo
 Trivial LaTeX style for using logo of The University of Sheffield.
 
 ## Disclaimer
