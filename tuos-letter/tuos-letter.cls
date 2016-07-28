@@ -9,10 +9,21 @@
 %%   The 2-clause BSD-style license.
 %%
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
-\ProvidesPackage{tuos-letter}%
+\ProvidesClass{tuos-letter}%
   [2016/07/28 LaTeX letter class following the cooperate design of The University of Sheffield]
+  \RequirePackage{ifthen}
+\newboolean{tuos@plainfonts}
+\setboolean{tuos@plainfonts}{false}
+
 \LoadClassWithOptions{scrlttr2}[2016/06/14]
-\RequirePackage{tuos-fonts}
+\DeclareOption{plainfonts}{\setboolean{tuos@plainfonts}{true}}
+\ProcessOptions\relax
+
+
+
+\ifthenelse{\boolean{tuos@plainfonts}}
+  {\typeout{Using LaTeX fonts instead of cooperate fonts.}}
+  {\RequirePackage{tuos-fonts}}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{tuos-logo}
 \RequirePackage{xcolor}
