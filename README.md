@@ -10,6 +10,6 @@ University of Sheffield.
   layout of the official templates of The University of Sheffield.
 
 ## License
-If not otherwise stated, all sub-projects are licensed under a
-2-clause BSD-style license.
-
+If not otherwise stated, all sub-projects are dual-licensed under a
+2-clause BSD-style license and/or the LPPL version 1 or any later 
+version. 

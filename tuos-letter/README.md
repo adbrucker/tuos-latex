@@ -35,5 +35,6 @@ use this option:
 * You do not want to fiddle with your font installation.
   
 ## License
-This project is licensed under a 2-clause BSD-style license.
+This project is dual-licensed under a 2-clause BSD-style license and/or 
+the LPPL version 1 or any later version. 
 
