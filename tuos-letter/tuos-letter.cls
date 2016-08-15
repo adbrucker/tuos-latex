@@ -10,8 +10,8 @@
 %%
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesClass{tuos-letter}%
-  [2016/07/28 LaTeX letter class following the cooperate design of The University of Sheffield]
-  \RequirePackage{ifthen}
+  [2016/08/15 v1.0  LaTeX letter class following the cooperate design of The University of Sheffield]
+\RequirePackage{ifthen}
 \newboolean{tuos@plainfonts}
 \setboolean{tuos@plainfonts}{false}
 
@@ -23,9 +23,9 @@
 
 \ifthenelse{\boolean{tuos@plainfonts}}
   {\typeout{Using LaTeX fonts instead of cooperate fonts.}}
-  {\RequirePackage{tuos-fonts}}
+  {\RequirePackage{tuos-fonts}[2016/08/15]}
 \RequirePackage[T1]{fontenc}
-\RequirePackage{tuos-logo}
+\RequirePackage{tuos-logo}[2016/08/15]
 \RequirePackage{xcolor}
 \RequirePackage{hyperref}
 \KOMAoptions{
