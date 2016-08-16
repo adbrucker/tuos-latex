@@ -39,6 +39,7 @@
   \ifbeamer@plainframe%
   \else%
     \ifbeamer@compress%
+      \vskip0.1cm%
       \hskip2.5cm%
     \else
       \vskip1.8cm%
@@ -47,7 +48,13 @@
   \fi%
   \usebeamercolor[fg]{frametitle}\usebeamerfont{frametitle}%
   \insertframetitle\par%
-  \ifbeamer@compress\hskip2.5cm\fi%
+  \ifbeamer@plainframe%
+  \else%
+    \ifbeamer@compress%
+      \hskip2.5cm%
+    \else%
+    \fi%
+  \fi%
   \usebeamercolor[fg]{framesubtitle}\usebeamerfont{framesubtitle}%
   \insertframesubtitle
 }
