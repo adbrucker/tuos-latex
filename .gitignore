@@ -3,3 +3,6 @@ tuos-logo/logo/*.jpg
 *.log
 auto
 *.out
+*.nav
+*.snm
+*.toc
