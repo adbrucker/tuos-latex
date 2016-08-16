@@ -1,0 +1,30 @@
+%% Copyright (C) 2016 Achim D. Brucker, https://www.brucker.ch
+%%
+%% License:
+%%   This program can be redistributed and/or modified under the terms
+%%   of the LaTeX Project Public License Distributed from CTAN
+%%   archives in directory macros/latex/base/lppl.txt; either
+%%   version 1 of the License, or any later version.
+%%   OR
+%%   The 2-clause BSD-style license.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{beamerthemetuos}
+   [2016/08/20 v1.1  LaTeX presentation style following the cooperate design of The University of Sheffield]
+
+\mode<presentation>
+
+\newif\ifbeamer@colour
+\beamer@colourfalse
+
+\DeclareOptionBeamer{colour}{\beamer@colourtrue}
+\ProcessOptionsBeamer
+
+\RequirePackage[]{tuos-logo}[2016/08/15]
+\RequirePackage{tikz}
+
+\usecolortheme{tuos}
+\useinnertheme{tuos}
+\useoutertheme{tuos}
+\mode
+<all>
+\endinput
