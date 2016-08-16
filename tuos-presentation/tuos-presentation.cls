@@ -12,11 +12,7 @@
 \ProvidesClass{tuos-presentation}%
   [2016/08/20 v1.1  LaTeX presenation class following the cooperate design of The University of Sheffield]
 \RequirePackage{ifthen}
-
 \LoadClassWithOptions{beamer}[]
 \ProcessOptions\relax
-
-\RequirePackage[T1]{fontenc}
 \usetheme{tuos}
-
 \endinput
