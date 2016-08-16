@@ -12,21 +12,11 @@
 \ProvidesClass{tuos-presentation}%
   [2016/08/20 v1.1  LaTeX presenation class following the cooperate design of The University of Sheffield]
 \RequirePackage{ifthen}
-\newboolean{tuos@plainfonts}
-\setboolean{tuos@plainfonts}{false}
 
 \LoadClassWithOptions{beamer}[]
-\DeclareOption{plainfonts}{\setboolean{tuos@plainfonts}{true}}
 \ProcessOptions\relax
 
-
-
-\ifthenelse{\boolean{tuos@plainfonts}}
-  {\typeout{Using LaTeX fonts instead of cooperate fonts.}}
-  {\RequirePackage{tuos-fonts}[2016/08/15]}
 \RequirePackage[T1]{fontenc}
-\RequirePackage{tuos-logo}[2016/08/15]
-\RequirePackage{xcolor}
 \usetheme{tuos}
 
 \endinput

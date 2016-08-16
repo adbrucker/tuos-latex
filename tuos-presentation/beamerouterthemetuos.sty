@@ -38,11 +38,16 @@
 \defbeamertemplate*{frametitle}{TUOS}{%
   \ifbeamer@plainframe%
   \else%
-    \vskip1.8cm%
-    \vskip-\topsep%
+    \ifbeamer@compress%
+      \hskip2.5cm%
+    \else
+      \vskip1.8cm%
+      \vskip-\topsep%
+    \fi%
   \fi%
   \usebeamercolor[fg]{frametitle}\usebeamerfont{frametitle}%
   \insertframetitle\par%
+  \ifbeamer@compress\hskip2.5cm\fi%
   \usebeamercolor[fg]{framesubtitle}\usebeamerfont{framesubtitle}%
   \insertframesubtitle
 }

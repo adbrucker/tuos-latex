@@ -13,14 +13,29 @@
 
 \mode<presentation>
 
+\newif\ifbeamer@plainfonts
+\beamer@plainfontsfalse
+
 \newif\ifbeamer@colour
 \beamer@colourfalse
 
+\DeclareOption{plainfonts}{\beamer@plainfontstrue}
 \DeclareOptionBeamer{colour}{\beamer@colourtrue}
 \ProcessOptionsBeamer
+\ProcessOptions
 
+
+\RequirePackage{xcolor}
 \RequirePackage[]{tuos-logo}[2016/08/15]
 \RequirePackage{tikz}
+
+\ifbeamer@plainfonts
+  \typeout{Using LaTeX fonts instead of cooperate fonts.}
+\else
+  \RequirePackage{tuos-fonts}[2016/08/15]
+  \usefonttheme{professionalfonts}
+\fi
+
 
 \usecolortheme{tuos}
 \useinnertheme{tuos}
@@ -28,3 +43,4 @@
 \mode
 <all>
 \endinput
+
