@@ -6,11 +6,10 @@ University of Sheffield.
   The University of Sheffield.
 * **tuos-logo:** LaTeX style for using the logo of the The University of
    Sheffield.
-* **tuos-letter:** LaTeX style for writing letters that approximate the 
-  layout of the official templates of The University of Sheffield.
+* **tuos-letter:** LaTeX style for writing letters that follow the 
+  cooperate guidelines of The University of Sheffield.
 * **tuos-presentation:** LaTeX style for writing presentations following 
   (roughly) the guidelines of The University of Sheffield.
-
 
 ## License
 If not otherwise stated, all sub-projects are dual-licensed under a
