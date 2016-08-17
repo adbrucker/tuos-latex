@@ -44,8 +44,15 @@
 \mode
 <all>
 
+\AtBeginDocument{
+\providecommand{\thanksMsg}{Thank you for your attention!}
+\providecommand{\thankYouMsg}{Thank you!}
+\providecommand{\thanksQuestionsMsg}{Any questions or remarks?}
+\providecommand{\AgendaMsg}{Outline}
+}
+
 \newcommand{\CopyrightFrame}{%
-  \setbeamertemplate{footline}[default]
+  \setbeamertemplate{footline}[default]%
   \begin{frame}\vfill\Huge%
    {\usebeamercolor[fg]{title}\rmfamily%
     \noindent To\\
@@ -53,6 +60,16 @@
     \noindent And\\
     \noindent Understand.}\vfill
 \end{frame}}
+
+\newcommand{\AgendaFrame}[1][]{%
+\bgroup  \setbeamertemplate{footline}[default]%
+\begin{frame}
+  \frametitle{\AgendaMsg}
+  {\tableofcontents[#1]}
+\end{frame}
+\egroup}
+
+
 
 \endinput
 
