@@ -21,7 +21,7 @@ customised setup of the
 [beamer class](https://www.ctan.org/pkg/beamer).  Thus, please see the
 beamer documentation for its detailed use. In general, you can either
 use the class file (i.e., `\documentclass{tuos-presentation}` or use
-`\usetheme{tuos}` in a regular beamer setup.
+`\usetheme{tuos-presentation}` in a regular beamer setup.
 
 The class/theme provides the following options:
 * `compress`: using a layout that offers more space than the default

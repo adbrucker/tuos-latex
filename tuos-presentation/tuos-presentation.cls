@@ -14,5 +14,5 @@
 \RequirePackage{ifthen}
 \LoadClassWithOptions{beamer}[]
 \ProcessOptions\relax
-\usetheme{tuos}
+\usetheme{tuos-presentation}
 \endinput
