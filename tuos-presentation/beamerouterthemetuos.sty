@@ -59,11 +59,14 @@
   \insertframesubtitle
 }
 \defbeamertemplate*{footline}{TUOS}{%
-  { \quad
-    \mmddyyyydate\today \quad \textcopyright\ Copyright The University
-    of Sheffield / 
-    Page \insertframenumber{} of \inserttotalframenumber}\hspace*{2ex}
-  \vskip5pt%
+   \quad
+    \ifnum \insertpagenumber=1
+    \else
+      \mmddyyyydate\today \quad \textcopyright\ Copyright The University
+      of Sheffield / 
+      Page \insertframenumber{} of \inserttotalframenumber\hspace*{2ex}
+    \fi
+    \vskip5pt%
 }
 \mode
 <all>
