@@ -1,0 +1,71 @@
+\documentclass[aspectratio=169]{tuos-presentation}
+%\documentclass[compress,aspectratio=43]{tuos-presentation}
+%\documentclass[aspectratio=169,colour]{tuos-presentation}
+%\documentclass[aspectratio=169,compress,colour]{tuos-presentation}
+%\documentclass[aspectratio=169,plainfonts,colour]{tuos-presentation}
+\usepackage[T1]{fontenc}
+
+\title{The University \LaTeX{} Template}
+\subtitle{A Beamer-theme mimicking the PowerPoint guidelines of The
+  Unviersity of Sheffield}
+\institute[The University of Sheffield]
+{Department of Computer Science, The University of Sheffield, Sheffield, UK}
+  \author[A.D. Brucker] {%
+    \href{http://www.brucker.uk/}{\textbf{Achim D. Brucker}}\\
+    \texttt{\footnotesize\href{mailto:"Achim D. Brucker"
+        <a.brucker@sheffield.ac.uk>}{a.brucker@sheffield.ac.uk}
+      \hspace{.6cm}
+      \url{http://www.brucker.uk/}}
+    }
+
+\begin{document}
+\begin{frame}
+  \maketitle
+\end{frame}
+
+\AgendaFrame
+
+\section{Introduction}
+\subsection{Introduction}
+\begin{frame}
+  \frametitle{A standard slide}
+  \framesubtitle{With a frame subtitle}
+  \begin{itemize}
+  \item Only first word of slide title \ldots
+    \begin{itemize}
+    \item  And a second level 
+      \begin{itemize}
+      \item  Officially, a third level should be avoided
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+  \[ x = \sum_{i=0}^{-\infty}\sqrt{-i}\]
+\end{frame}
+
+\section{Conclusion}
+\subsection{Introduction}
+
+\begin{frame}[plain]
+  \frametitle{A plain slide}
+  \framesubtitle{With a frame subtitle}
+  \begin{itemize}
+  \item Only first word of slide title \ldots
+    \begin{itemize}
+    \item  And a second level 
+      \begin{itemize}
+      \item  Officially, a third level should be avoided
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+  \[ x = \sum_{i=0}^{-\infty}\sqrt{-i}\]
+\end{frame}
+
+
+
+\PartFrame{New Chapter}
+
+\ThanksFrame
+
+\CopyrightFrame
+
+\end{document}
