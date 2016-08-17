@@ -28,6 +28,7 @@
 \RequirePackage{xcolor}
 \RequirePackage[]{tuos-logo}[2016/08/15]
 \RequirePackage{tikz}
+\RequirePackage{xparse}
 
 \ifbeamer@plainfonts
   \typeout{Using LaTeX fonts instead of cooperate fonts.}
@@ -83,6 +84,19 @@
 \end{frame}
 }
 
-
+\DeclareDocumentCommand{\PartFrame}{ O{TUOSmagenta} O{white} m }{%
+  \bgroup
+  \setbeamertemplate{footline}[default]
+  \ifbeamer@colour
+    \setbeamercolor{normal text}{fg=#2, bg=#1}
+    \setbeamercolor{structure}{fg=#2, bg=#1}
+  \else
+    \setbeamercolor{normal text}{fg=#1, bg=#2}
+    \setbeamercolor{structure}{fg=#1, bg=#2}
+  \fi
+  \part{#3}
+  \frame{\partpage}
+  \egroup
+}
 \endinput
 
