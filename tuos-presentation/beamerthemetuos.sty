@@ -52,14 +52,15 @@
 }
 
 \newcommand{\CopyrightFrame}{%
-  \setbeamertemplate{footline}[default]%
+  \bgroup\setbeamertemplate{footline}[default]%
   \begin{frame}\vfill\Huge%
    {\usebeamercolor[fg]{title}\rmfamily%
     \noindent To\\
     \noindent Discover\\
     \noindent And\\
     \noindent Understand.}\vfill
-\end{frame}}
+\end{frame}
+\egroup}
 
 \newcommand{\AgendaFrame}[1][]{%
 \bgroup  \setbeamertemplate{footline}[default]%
