@@ -98,5 +98,57 @@
   \frame{\partpage}
   \egroup
 }
+
+\newsavebox{\@tempsboxa}
+\newsavebox{\@tempsboxb}
+\newlength{\@tempdimd}
+\newenvironment{kickerbox}[1][]
+{%
+  \@tempdima=\textwidth%
+  \advance\@tempdima by -8mm%
+  \advance\@tempdima by -4mm%   
+  % 
+  \sbox{\@tempsboxb}{\parbox{4mm}{#1}}%
+  % 
+  \begin{lrbox}{\@tempsboxa}%
+    \begin{minipage}{\the\@tempdima}%
+}{%
+\end{minipage}%
+\end{lrbox}%
+  \settowidth{\@tempdima}{\usebox{\@tempsboxa}}
+  \advance\@tempdima by .4cm%
+  \settoheight{\@tempdimb}{\usebox{\@tempsboxa}}
+  \settodepth{\@tempdimc}{\usebox{\@tempsboxa}}
+  \advance\@tempdimb by .4cm%
+  \advance\@tempdimb by \the\@tempdimc%
+  %
+  \@tempdimc=\@tempdimb%
+  \settodepth{\@tempdimd}{\usebox{\@tempsboxb}}
+  \advance\@tempdimc by -\@tempdimd
+  \settodepth{\@tempdimd}{\usebox{\@tempsboxb}}
+  \advance\@tempdimc by -\@tempdimd
+\advance\@tempdimc by -.6cm
+
+  \smallskip
+  \begin{columns}[onlytextwidth]
+    \begin{column}[t]{7mm}
+    \begin{beamercolorbox}[sep=.1cm,wd=8mm,ht=\the\@tempdimb]{palette secondary}
+     \usebox{\@tempsboxb}\vspace{\the\@tempdimc}%
+   \end{beamercolorbox}
+    \end{column}
+     \begin{column}[t]{\the\@tempdima}
+       \begin{beamercolorbox}[sep=0.2cm,wd=\the\@tempdima,ht=\the\@tempdimb]{kicker}%
+         \usebox{\@tempsboxa}%
+       \end{beamercolorbox}%
+     \end{column}
+   \end{columns}
+   \smallskip
+}
+
+\newenvironment{quotebox}
+{\begin{kickerbox}[{\Huge\textbf{\usebeamercolor[bg]{kicker}{\,``}}}]}
+  {\end{kickerbox}}
+
+
 \endinput
 
