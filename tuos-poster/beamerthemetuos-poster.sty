@@ -9,10 +9,66 @@
 %%   The 2-clause BSD-style license.
 %%
 
-\ProvidesPackage{beamerthemeuos-poster}
+% Headline: TUOS Logo left, title information
+% Footer: References, Ackowledgeemnts, Partner Logos
+
+
+\ProvidesPackage{beamerthemetuos-poster}
   [2016/08/20 v1.1  LaTeX theme following the cooperate design of The University of Sheffield]
+\usetheme{tuos-presentation}
+
+\setbeamertemplate{rhlogo}{}
+\setbeamertemplate{webpage}{www.brucker.ch}
+
+\newlength{\logoheight}
+\newlength{\titleheight}
+\newlength{\rhlogowidth}
+
+\usepackage{calc}
+\setlength{\logoheight}{6cm}%
+\setlength{\rhlogowidth}{0cm}%
 
 \mode<presentation>
+
+\setbeamerfont{title}{size=\huge}
+\setbeamerfont{subtitle}{size=\Large}
+\setbeamerfont{author}{size=\large}
+\setbeamerfont{institute}{size=\large}
+
+\setbeamertemplate{headline}{
+  \leavevmode%
+  \setlength{\rhlogowidth}{\widthof{\usebeamertemplate*{rhlogo}}}%
+  \begin{beamercolorbox}[wd=\paperwidth]{headline}
+      \begin{minipage}[t][\logoheight+2cm][t]{2.55\logoheight}
+        \begin{tikzpicture}[overlay,remember picture]
+          \node[anchor=north west,yshift=-.8cm,xshift=-0.2cm]
+          at (current page.north west) {
+            \ifbeamer@colour
+            \tuosLogoDark[height=\logoheight]
+            \else
+            \tuosLogoLight[height=\logoheight]
+            \fi
+          };
+        \end{tikzpicture}
+      \end{minipage}%
+      \begin{minipage}[t][\logoheight+2cm][t]{\paperwidth-2.55\logoheight-\rhlogowidth}
+        \vspace*{\fill}
+        \begin{center}
+          \usebeamercolor[fg]{title}%
+               \usebeamerfont{title}\inserttitle\\[1ex]
+          \usebeamercolor[fg]{author}%
+               \usebeamerfont{author}\insertauthor\\[1ex]
+          \usebeamercolor[fg]{institute}%
+               \usebeamerfont{institute}\insertinstitute\\[1ex]
+          \vspace*{\fill}
+        \end{center}
+      \end{minipage}%
+      \begin{minipage}[t][\logoheight+2cm][t]{\rhlogowidth}
+        \usebeamertemplate*{rhlogo}%
+      \end{minipage}
+    \end{beamercolorbox}
+}
+
 
 \mode<all>
 \endinput
