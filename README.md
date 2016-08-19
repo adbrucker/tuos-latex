@@ -10,6 +10,8 @@ University of Sheffield.
   cooperate guidelines of The University of Sheffield.
 * **tuos-presentation:** LaTeX style for presentations following 
     the guidelines of The University of Sheffield.
+* **tuos-poster:** LaTeX style for poster following the guidelines 
+    of The University of Sheffield.
 
 ## License
 If not otherwise stated, all sub-projects are dual-licensed under a
