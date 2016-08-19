@@ -18,6 +18,7 @@
 \usetheme{tuos-presentation}
 
 \usefonttheme{tuos-poster}
+\usecolortheme{tuos-poster}
 
 \setbeamertemplate{rhlogo}{}
 \setbeamertemplate{webpage}{www.brucker.ch}
@@ -64,6 +65,20 @@
         \usebeamertemplate*{rhlogo}%
       \end{minipage}
     \end{beamercolorbox}
+}
+
+\setbeamertemplate{block begin}{
+  \vskip.75ex
+  \begin{beamercolorbox}[rounded=true,shadow=true,leftskip=1cm,colsep*=.75ex]{block title}%
+    \usebeamerfont*{block title}\insertblocktitle
+  \end{beamercolorbox}%
+  {\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
+  \usebeamerfont{block body}%
+  \begin{beamercolorbox}[rounded=true,shadow=true,colsep*=.75ex,sep=.75ex,vmode]{block body}%
+    \ifbeamercolorempty[bg]{block body}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
+  }
+  \setbeamertemplate{block end}{
+  \end{beamercolorbox}
 }
 
 
