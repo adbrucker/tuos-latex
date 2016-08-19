@@ -15,4 +15,5 @@
 \LoadClassWithOptions{beamer}[]
 \ProcessOptions\relax
 \usetheme{tuos-poster}
+\usepackage{beamerposter}
 \endinput
