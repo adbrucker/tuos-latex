@@ -9,7 +9,7 @@
 %%   The 2-clause BSD-style license.
 %%
 \ProvidesFile{tuos.lco}[%
-  2016/07/28 Letter layout for tuos-letter.]
+  2016/08/20 v1.1 Letter layout for tuos-letter.]
 
 % type-setting the subject line 
 \setkomafont{subject}{\normalcolor\bfseries}

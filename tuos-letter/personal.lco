@@ -11,7 +11,7 @@
 %
 
 \ProvidesFile{adb-s1-4dp-ex.lco}[% 
-  2016/06/28 Personal Letter Setup (Achim Brucker, S1 4DP)]
+  2016/08/20 v1.1 Personal Letter Setup (Achim Brucker, S1 4DP)]
 
 \setkomavar{department}{Department\newline of\newline Computer Science}
 \setkomavar{departmentheadtitle}{Professor}
@@ -31,6 +31,6 @@
 \setkomavar{fromaddress}{Regent Court\\211 Portobello St.\\Sheffield S1 4DP, UK}
 \endinput
 %
-%  End of Letter Class Option Achim Brucke
+%  End of Letter Class Option Achim Brucker
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

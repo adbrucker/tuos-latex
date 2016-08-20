@@ -10,7 +10,7 @@
 %%
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesClass{tuos-letter}%
-  [2016/08/15 v1.0  LaTeX letter class following the cooperate design of The University of Sheffield]
+  [2016/08/20 v1.1 LaTeX letter class following the cooperate design of The University of Sheffield]
 \RequirePackage{ifthen}
 \newboolean{tuos@plainfonts}
 \setboolean{tuos@plainfonts}{false}
