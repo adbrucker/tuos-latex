@@ -25,11 +25,11 @@ set out by The University of Sheffield.
 
 ## Usage
 Including the style in your latex document, i.e., 
-```
+```tex
 \usepackage{tuos-logo}
 ```
 defines two commands:
-```
+```tex
 \tuosLogoLight
 \tuosLogoDark
 ```
