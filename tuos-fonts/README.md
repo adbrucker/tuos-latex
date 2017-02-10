@@ -11,10 +11,10 @@ supported by the University of Sheffield.
 ## Prerequisites 
 
 * The
-  [Stephenson and Blake fonts](https://www.shef.ac.uk/marketing/help-yourself/visual-identity/core-elements/fonts/blake-stephenson)
+  [Stephenson and Blake fonts](https://www.sheffield.ac.uk/marketing/visual-identity/downloads/fonts)
   used by The University for Sheffield. Note that you need to be a
   member of the University do
-  [download](https://www.shef.ac.uk/marketing/help-yourself/visual-identity/downloads/fonts/download-stephenson-blake)
+  [download](https://www.sheffield.ac.uk/polopoly_fs/1.15319!/file/Fonts.zip)
   them.
 
 * The `autoinst' too from the
