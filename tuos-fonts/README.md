@@ -27,32 +27,32 @@ supported by the University of Sheffield.
 * First, we use `autoinst` to generate LaTeX styles
   for both fonts.
   * Unzip the archive with the fonts:
-    ```
-    mkdir fonts
-    cd fonts 
-    unzip ../Fonts.zip 
-    ```
+```
+mkdir fonts
+cd fonts 
+unzip ../Fonts.zip 
+```
   * Now use `autoinst` for generating the font-specific LaTeX
     styles (using the default, autoinst will install the styles
     in your home directory):
     * Stephenson (the serif font) 
-      ```
-      autoinst Steph.ttf StephBd.ttf StephIt.ttf
-      ```
+```
+autoinst Steph.ttf StephBd.ttf StephIt.ttf
+```
     * Blake (the sans serif font) 
-      ```
-      autoinst -sanserif Blake.ttf BlakeBd.ttf BlakeIt.ttf 
-      ```
+```
+autoinst -sanserif Blake.ttf BlakeBd.ttf BlakeIt.ttf 
+```
       * Most likely, you need to update the font maps. Please consult
         your LaTeX distribution and operating system help for detailed
         instructions. For example, in case Debian, you might (for a
         system wide-installation) to edit
         `/etc/texmf/web2c/updmap.cfg` and add the two lines (adapt the
         path information):
-        ```
-        MixedMap TUOSBlake/TUOSBlake.map
-        MixedMap TUOSStephenson/TUOSStephenson.map
-        ```
+```
+MixedMap TUOSBlake/TUOSBlake.map
+MixedMap TUOSStephenson/TUOSStephenson.map
+``
         and call `update-updmap`.
 * For your convince, you might want to install `tuos-fonts.sty`, which
   just includes the generated styles for Stephenson and Blake and
