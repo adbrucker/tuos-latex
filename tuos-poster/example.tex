@@ -1,5 +1,5 @@
-%\documentclass[orientation=landscape,size=a1,scale=1.2]{tuos-poster}
-\documentclass[colour,orientation=landscape,size=a1,scale=1.2]{tuos-poster}
+\documentclass[orientation=landscape,size=a1,scale=1.2]{tuos-poster}
+%\documentclass[colour,orientation=landscape,size=a1,scale=1.2]{tuos-poster}
 %\documentclass[orientation=portrait,size=a1,scale=1.2]{tuos-poster}
 %\documentclass[colour,orientation=portrait,size=a1,scale=1.2]{tuos-poster}
 
@@ -21,27 +21,63 @@
     \begin{column}{.31\textwidth}
       \begin{block}{Test Title}
          \begin{itemize}
-           \item First item.
-           \item Second item.
-           \item Third item.
+           \item \alert{First item.}
+           \item \textbf{Second item.}
+           \item \emph{Third item.}
          \end{itemize}
       \end{block}
       \begin{block}{Test Title}
-       Some text \ldots
+         \begin{enumerate}
+           \item \alert{First item.}
+           \item \textbf{Second item.}
+           \item \emph{Third item.}
+         \end{enumerate}
+      \end{block}
+      \begin{block}{Test Title}
+        \[ e = m \cdot c^2 \]
       \end{block}
     \end{column}
+%
     \begin{column}{.31\textwidth}
-      \begin{block}{Test Title}
-      \end{block}
-      \begin{block}{Test Title}
-      \end{block}
+      \begin{alertblock}{Test Title}
+         \begin{itemize}
+           \item \alert{First item.}
+           \item \textbf{Second item.}
+           \item \emph{Third item.}
+         \end{itemize}
+      \end{alertblock}
+      \begin{alertblock}{Test Title}
+         \begin{enumerate}
+           \item \alert{First item.}
+           \item \textbf{Second item.}
+           \item \emph{Third item.}
+         \end{enumerate}
+      \end{alertblock}
+      \begin{alertblock}{Test Title}
+        \[ e = m \cdot c^2 \]
+      \end{alertblock}
     \end{column}
+%
     \begin{column}{.31\textwidth}
-      \begin{block}{Test Title}
-      \end{block}
-      \begin{block}{Test Title}
-      \end{block}
+      \begin{Example}[Test Title]
+         \begin{itemize}
+           \item \alert{First item.}
+           \item \textbf{Second item.}
+           \item \emph{Third item.}
+         \end{itemize}
+      \end{Example}
+      \begin{Example}[Test Title]
+         \begin{enumerate}
+           \item \alert{First item.}
+           \item \textbf{Second item.}
+           \item \emph{Third item.}
+         \end{enumerate}
+      \end{Example}
+      \begin{Example}[Test Title]
+        \[ e = m \cdot c^2 \]
+      \end{Example}
     \end{column}
+%
     \end{columns}
 \end{frame}
 \end{document}
