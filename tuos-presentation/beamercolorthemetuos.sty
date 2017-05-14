@@ -19,16 +19,27 @@
 
 \mode<presentation>
 \ifbeamer@colour
+  \setbeamercolor{block title}{fg=TUOSlightblue, bg=white}
+  \setbeamercolor{block body}{fg=gray!30!white, bg=black}
+  \setbeamercolor{block alerted title}{fg=TUOSmagenta, bg=white}
+  \setbeamercolor{block alerted body}{fg=gray!30!white, bg=black}
+
   \setbeamercolor{structure}{fg=white}
   \setbeamercolor{normal text}{fg=white, bg=TUOSlightblue}
+  \setbeamercolor{alerted text}{fg=TUOSmagenta}
   \setbeamercolor*{title}{fg=white}
   \setbeamercolor*{subtitle}{fg=white}
   \setbeamercolor{frametitle}{fg=white}
   \setbeamercolor{framesubtitle}{fg=white}
   \setbeamercolor{kicker}{use=structure,fg=white,bg=TUOSdarkblue}
 \else
+  \setbeamercolor{block title}{bg=TUOSlightblue, fg=white}
+  \setbeamercolor{block body}{bg=gray!30!white, fg=black}
+  \setbeamercolor{block alerted title}{bg=TUOSmagenta, fg=white}
+  \setbeamercolor{block alerted body}{bg=gray!30!white, fg=black}
   \setbeamercolor{structure}{fg=TUOSlightblue, bg=white}
   \setbeamercolor{normal text}{fg=TUOSlightblue, bg=white}
+  \setbeamercolor{alerted text}{fg=TUOSmagenta}
   \setbeamercolor*{title}{fg=TUOSdarkblue}
   \setbeamercolor*{subtitle}{fg=TUOSlightblue}
   \setbeamercolor{frametitle}{fg=TUOSdarkblue}
