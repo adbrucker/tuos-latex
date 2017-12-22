@@ -1,10 +1,12 @@
 %%   This program can be redistributed and/or modified under the terms
 %%   of the LaTeX Project Public License Distributed from CTAN
 %%   archives in directory macros/latex/base/lppl.txt; either
-%%   version 1 of the License, or any later version.
+%%   version 1.3c of the License, or (at your opinion) any later version.
 %%   OR
 %%   The 2-clause BSD-style license.
 %%
+%%   SPDX-License-Identifier: LPPL-1.3c+ OR BSD-2-Clause
+\NeedsTeXFormat{LaTeX2e}\relax
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %  Letter Class Option for 
@@ -24,7 +26,7 @@
 \setkomavar{fromurl}{www.brucker.uk}
 \setkomavar{fromblog}{logicalhacking.com/blog}
 \setkomavar{fromphone}{+44 114 22 21806}
-\setkomavar{fromemail}{a<lastname>@sheffield.ac.uk}
+\setkomavar{fromemail}{a.<lastname>@sheffield.ac.uk}
 \setkomavar{signature}{Achim D. Brucker\\Senior Lecturer (Software Security \& Assurance)}
 
 
