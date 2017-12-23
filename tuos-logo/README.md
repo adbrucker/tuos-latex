@@ -43,5 +43,6 @@ The package itself has two options:
 * `bw` for using the black-and-white logo instead of the colour logo.
 
 ## License
-This project is dual-licensed under a 2-clause BSD-style license and/or the LPPL version 1 or any later version. 
+This project is dual-licensed under a 2-clause BSD-style license and/or the 
+LPPL version 1.3c or (at your opinion) any later version. 
 
