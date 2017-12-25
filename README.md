@@ -15,5 +15,5 @@ Various LaTeX templates mimicking the cooperate guidelines of the
 
 ## License
 If not otherwise stated, all sub-projects are dual-licensed under a
-2-clause BSD-style license and/or the LPPL version 1 or any later 
-version. 
+2-clause BSD-style license and/or the LPPL version 1.3c or (at your 
+opinion) any later version. 
