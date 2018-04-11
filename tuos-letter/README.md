@@ -1,4 +1,5 @@
 # tuos-letter
+
 A LaTeX class (based on the letter class of the
 [KOMA-Script bundle](https://www.ctan.org/pkg/koma-script) that
 approximates the
@@ -6,14 +7,17 @@ approximates the
 of The University of Sheffield.
 
 ## Disclaimer
+
 Please not that this LaTeX setup is neither endorsed nor officially
 supported by the University of Sheffield.
 
 ## Prerequisites 
+
 * The `tuos-logo` style.
 * The `tuos-fonts` style (optional).
 
 ## Installation 
+
 * Copy the `tuos-letter.cls` and `tuos.lco` into your `texmf` tree.
 * Edit your personal contact and departmental information in the
   `personal.lco` file.
@@ -21,6 +25,7 @@ supported by the University of Sheffield.
   letter.
 
 ## Usage
+
 The `tuos-letter` class is a customised setup of the letter class of the
 [KOMA-Script bundle](https://www.ctan.org/pkg/koma-script). Thus,
 please see the KOMA-Script bundle documentation for its detailed
@@ -35,5 +40,9 @@ use this option:
 * You do not want to fiddle with your font installation.
   
 ## License
+
 This project is dual-licensed under a 2-clause BSD-style license and/or 
 the LPPL version 1.3c or (at your opinion) any later version. 
+
+SPDX-License-Identifier: LPPL-1.3c+ OR BSD-2-Clause
+

@@ -1,20 +1,25 @@
 # tuos-poster
+
 A LaTeX class (based on the [beamerposter](https://www.ctan.org/tex-archive/macros/latex/contrib/beamerposter))
 that roughly follows the 
 [PowerPoint Poster guidelines](http://www.sheffield.ac.uk/marketing/visual-identity/downloads/powerpoint-templates) 
 of The University of Sheffield.
 
 ## Disclaimer
+
 Please not that this LaTeX setup is neither endorsed nor officially
 supported by the University of Sheffield.
 
 ## Prerequisites 
+
 * The `tuos-presentation` theme/class.
 
 ## Installation 
+
 * Copy the various `*.sty` and `*.cls` files into your `texmf` tree. 
 
 ## Usage
+
 The `tuos-poster` class (respectively, a beamerposter theme) is a
 customised setup of the
 [beamer class](https://www.ctan.org/pkg/beamer) and  of the 
@@ -37,6 +42,9 @@ The class/theme provides the following options:
     
 
 ## License
+
 This project is dual-licensed under a 2-clause BSD-style license and/or 
 the LPPL version 1.3c or (at your opinion) any later version. 
+
+SPDX-License-Identifier: LPPL-1.3c+ OR BSD-2-Clause
 

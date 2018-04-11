@@ -1,11 +1,14 @@
 # tuos-logo
+
 Trivial LaTeX style for using logo of The University of Sheffield.
 
 ## Disclaimer
+
 Please not that this LaTeX setup is neither endorsed nor officially
 supported by the University of Sheffield.
 
 ## Prerequisites 
+
 Download the following archives, unzip the them and store the
 extracted jpg-images in the `logo` folder.
 * [Colour logo for printing on a white background (medium)](https://www.shef.ac.uk/polopoly_fs/1.15339!/file/tuoslogo_key_cmyk_med.zip)
@@ -24,6 +27,7 @@ set out by The University of Sheffield.
 ## Installation 
 
 ## Usage
+
 Including the style in your latex document, i.e., 
 ```tex
 \usepackage{tuos-logo}
@@ -43,6 +47,9 @@ The package itself has two options:
 * `bw` for using the black-and-white logo instead of the colour logo.
 
 ## License
+
 This project is dual-licensed under a 2-clause BSD-style license and/or the 
 LPPL version 1.3c or (at your opinion) any later version. 
+
+SPDX-License-Identifier: LPPL-1.3c+ OR BSD-2-Clause
 
