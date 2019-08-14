@@ -5,7 +5,7 @@ Various LaTeX templates mimicking the cooperate guidelines of
 
 * **tuos-fonts:** LaTeX style for using the cooperate fonts used by 
   The University of Sheffield.
-* **tuos-logo:** LaTeX style for using the logo of the The University of
+* **tuos-logo:** LaTeX style for using the logo of The University of
   Sheffield.
 * **tuos-letter:** LaTeX style for writing letters that follow the 
   cooperate guidelines of The University of Sheffield.
