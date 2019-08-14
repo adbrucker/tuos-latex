@@ -1,6 +1,6 @@
-# tuos-latex
+# [tuos-latex](https://git.logicalhacking.com/adbrucker/tuos-latex)
 
-Various LaTeX templates mimicking the cooperate guidelines of the 
+Various LaTeX templates mimicking the cooperate guidelines of 
 [The University of Sheffield.](https://www.sheffield.ac.uk)
 
 * **tuos-fonts:** LaTeX style for using the cooperate fonts used by 
